@@ -1,0 +1,330 @@
+/* Reset và cấu hình cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+/* Li */
+li {
+    list-style: none; /* Bỏ chấm tròn */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    z-index: 1;
+    box-shadow: 2px 2px 2px rgba(241, 241, 241, 0.873);
+}
+
+/* Logo */
+header img {
+    width: 150px;
+    cursor: pointer;
+}
+
+/* Others (search, shopping, user) */
+.other {
+    display: flex;
+}
+
+.other > li {
+    padding: 0 12px;
+}
+
+.other > li:first-child {
+    position: relative;
+}
+
+.other > li:first-child input {
+    width: 100%;
+    height: 150%;
+    margin-top: -20px;
+    margin-left: -20px;
+    border: 0;
+}
+
+.other > li:first-child i {
+    position: absolute;
+    right: 10px;
+}
+
+/* Menu */
+#menu {
+    list-style: none;
+    display: flex;
+}
+
+#menu ul {
+    list-style: none;
+    background: #ffffff;
+    text-align: center;
+}
+
+#menu ul li {
+    color: #0f0f0f;
+    display: inline-table;
+    width: 120px;
+    height: 30px;
+    line-height: 50px;
+    position: relative;
+}
+
+#menu ul li a {
+    color: #060606;
+    text-decoration: none;
+    display: block;
+    font-size: 17px;
+}
+
+#menu ul li a:hover {
+    background: rgba(123, 123, 123, 0.262);
+    color: #333;
+}
+
+#menu ul li > .sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+#menu ul li:hover .sub-menu {
+    display: block;
+}
+
+/* Banner */
+#banner1,
+#banner2,
+#banner3,
+#banner4 {
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    padding: 0 133px;
+    position: relative;
+}
+
+#banner1 {
+    height: 680px;
+    margin-top: 70px;
+    background-image: url("banner onepiece.png");
+}
+
+#banner2 {
+    height: 710px;
+    margin-top: -40px;
+    background-image: url("banner rồng2.jpg");
+}
+
+#banner3 {
+    height: 700px;
+    margin-top: -40px;
+    background-image: url("banner liliwuyn2.jpg");
+}
+
+#banner4 {
+    height: 113px;
+    margin-top: -20px;
+    background-image: url("banner saleoff2.jpg");
+}
+
+/* Banner Buttons */
+button {
+    font-size: 20px;
+    width: 170px;
+    height: 45px;
+    background: #1d1a1a;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 200px;
+    transition: 0.4s;
+}
+
+button:hover {
+    background: orange;
+}
+
+/* New Arrivals */
+#wp-products {
+    padding: 130px 0 78px 0;
+}
+
+#wp-products h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 76px;
+}
+
+#list-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#list-products .item {
+    background: #fafafa;
+    margin-bottom: 460px;
+}
+
+#list-products .item .name,
+#list-products .item .price {
+    text-align: center;
+    color: #090909;
+    font-weight: bold;
+}
+
+/* What's Hot */
+#new {
+    padding: 50px 160px 78px 0;
+}
+
+#new h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 50px;
+}
+
+#list-new {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#list-new .item {
+    background: #fafafa;
+    margin-bottom: 460px;
+}
+
+#list-new .item .name {
+    text-align: center;
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+footer h4 {
+    color: white;
+    font-size: 16px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+footer p {
+    color: white;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+footer li {
+    color: white;
+    margin-top: 3px;
+    font-weight: bold;
+}
+
+/* Dropdown Category */
+.container {
+    max-width: 320px;
+    margin: 80px auto 30px;
+}
+
+.select-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.select-btn .btn-text {
+    font-size: 17px;
+    color: #333;
+}
+
+.select-btn .arrow-dwn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 21px;
+    height: 21px;
+    font-size: 14px;
+    background: #6e93f7;
+    border-radius: 50%;
+    color: white;
+}
+
+.list-items {
+    margin-top: 15px;
+    padding: 16px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.list-items .item {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    height: 50px;
+    transition: 0.3s;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.list-items .item:hover {
+    background-color: #e7edfe;
+}
+
+.item .checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+    border: 1.5px solid #c0c0c0;
+    border-radius: 4px;
+}
+
+.item.checked .checkbox {
+    background-color: #4070f4;
+    border-color: #4070f4;
+}
+
+.checkbox .check-icon {
+    font-size: 11px;
+    color: white;
+    transform: scale(0);
+}
+
+.item.checked .check-icon {
+    transform: scale(1);
+}
